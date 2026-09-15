@@ -1,0 +1,11 @@
+sequenceDiagram
+
+    participant User
+    participant Library
+    participant Book
+
+    User->>Library: ...
+    Library->>Book: ...
+    create participant Loan
+    Library->>Loan: ...
+    Library->>User: Loan created
